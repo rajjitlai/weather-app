@@ -13,6 +13,9 @@ async function checkWeather(locationName) {
     } else {
         const data = await response.json();
 
+        // console data from the API
+        console.log(data)
+
         document.querySelector(".location").innerHTML = data.name;
         document.querySelector(".temp").innerHTML = Math.round(data.main.temp) + "°";
         document.querySelector(".humidity").innerHTML = data.main.humidity + "%";
