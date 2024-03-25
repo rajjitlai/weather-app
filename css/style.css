@@ -14,12 +14,14 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
+    gap: 3rem;
 }
 
 .card {
     width: 100%;
-    max-width: 440px;
-    color: #000;
+    max-width: 470px;
+    color: #fff;
     text-align: center;
     padding: 50px 35px;
     border: 1px solid rgba(255, 255, 255, 0.3);
@@ -27,4 +29,146 @@
     border-radius: 20px;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(5px);
+}
+
+.search {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#searchForm {
+    width: 100%;
+}
+
+#searchForm input {
+    padding: 10px;
+    border: none;
+    outline: none;
+    border-radius: 30px;
+    background: #ebfffc14;
+    color: #fff;
+    padding: 10px 25px;
+    height: 60px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    flex: 1;
+    margin-right: 16px;
+    font-size: 18px;
+}
+
+#searchForm button,
+.reset button {
+    border: 0;
+    outline: 0;
+    background: #ebfffc3f;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+}
+
+#searchForm img {
+    width: 20px;
+}
+
+#searchForm input:hover,
+#searchForm button:hover,
+.reset button:hover {
+    background: #ebebeb55;
+}
+
+.error {
+    text-align: left;
+    margin-left: 21%;
+    font-size: 20px;
+    margin-top: 10px;
+    display: none;
+}
+
+.error p {
+    color: #ff3e3e;
+}
+
+/* later */
+.weatherBox {
+    display: none;
+}
+
+.weather-icon {
+    width: 120px;
+}
+
+.weatherInfo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 1rem;
+}
+
+.weatherDetails h1 {
+    font-size: 50px;
+    font-weight: 500;
+    margin-top: 5px;
+}
+
+.weatherDetails h2 {
+    font-size: 25px;
+    font-weight: 400;
+    margin-top: -10px;
+}
+
+.weatherDetailsCard {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    padding: 0px 20px;
+    margin-bottom: 5%;
+}
+
+.infoCol {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.infoCol img {
+    width: 50px;
+    margin-right: 10px;
+}
+
+.humidity,
+.wind {
+    font-size: 16px;
+    margin-top: -6px;
+}
+
+#current-time {
+    font-size: 30px;
+}
+
+.reset {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10%;
+}
+
+.reset button {
+    border-radius: 5px;
+    width: auto;
+    height: auto;
+    padding: 10px 20px;
+    margin-right: 0;
+    color: #fff;
+}
+
+footer{
+    color: #fff;
+    font-size: 15px;
 }
