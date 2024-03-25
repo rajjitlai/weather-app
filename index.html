@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="card">
+            <!-- search box -->
+            <div class="search">
+                <form id="searchForm">
+                    <input type="text" name="location" placeholder="Enter a location" spellcheck="false">
+                    <button type="submit">
+                        <img src="images/search.png" alt="search">
+                    </button>
+                </form>
+            </div>
+
+            <!-- error message -->
+            <div class="error">
+                <p>Location not found</p>
+            </div>
+
+            <!-- weather card -->
+            <div class="weatherCard">
+                <div class="weatherBox">
+                    <div class="weatherInfo">
+                        <img src="/images/rain.png" alt="random-icon" class="weather-icon">
+                        <div class="weatherDetails">
+                            <h1 class="temp">-</h1>
+                            <h2 class="location">-</h2>
+                        </div>
+                    </div>
+                    <div class="weatherDetailsCard">
+                        <div class="infoCol">
+                            <img src="images/humidity.png" alt="humidity">
+                            <p class="humidity">-</p>
+                        </div>
+                        <div class="infoCol">
+                            <img src="images/wind.png" alt="wind">
+                            <p class="wind">-</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- time -->
+            <div id="current-time"></div>
+
+            <!-- reset button -->
+            <div class="reset">
+                <button type="reset">Reset</button>
+            </div>
+        </div>
+
+        <footer>
+            <p>Created by Rajjit Laishram</p>
+        </footer>
+    </div>
+
+    <script src="js/index.js"></script>
+</body>
+
+</html>
