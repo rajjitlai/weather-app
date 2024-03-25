@@ -1,4 +1,4 @@
-const apiURL = "https://api.openweathermap.org/data/2.5/weather?appid=3594646025b2128d9c15b0a24f4efb0d&units=metric&q=";
+const apiURL = "your_API";
 
 const searchForm = document.querySelector('#searchForm');
 const searchBox = document.querySelector('input[name="location"]');
